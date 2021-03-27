@@ -3,7 +3,7 @@ alert('Você terá somente 3 chances!')
 var chute = parseInt(prompt('Insira um número entre 0 e 20'))
 
 var chances = 3
-var numeroSecreto = 3
+var numeroSecreto = Math.random() * 20;
 
 while( chances > 1 ){
   
@@ -23,6 +23,6 @@ while( chances > 1 ){
 }
 
 if(chute != numeroSecreto){
-  document.write("<h2>" + "Você perdeu! O número correto era o ${numeroSecreto} 😹" + "</h2>")
+  document.write("<h2>" + "Você perdeu! O número correto era o " + numeroSecreto.toFixed(0) + " 😹" + "</h2>")
 }
 
