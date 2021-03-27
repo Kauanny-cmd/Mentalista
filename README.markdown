@@ -4,10 +4,10 @@
 
 ## Da Imersão.Dev para o GitHub e é isso 🙂
 
-> V. Kauanny®
+A Pen created on CodePen.io. Original URL: [https://codepen.io/kauanny-cmd/pen/dyNMdXK](https://codepen.io/kauanny-cmd/pen/dyNMdXK).
 
 <hr> 
 
-A Pen created on CodePen.io. Original URL: [https://codepen.io/kauanny-cmd/pen/dyNMdXK](https://codepen.io/kauanny-cmd/pen/dyNMdXK).
+> V. Kauanny®
 
 
