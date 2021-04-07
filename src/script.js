@@ -1,28 +1,38 @@
 alert('Vamos começar!!!')
 alert('Você terá somente 3 chances!')
-var chute = parseInt(prompt('Insira um número entre 0 e 20'))
 
+var min = 0
+var max = 20
 var chances = 3
-var numeroSecreto = Math.random() * 20;
+var numeroSecreto = 16;
 
-while( chances > 1 ){
-  
-  if(chute == numeroSecreto){
-    document.write("<h2>" + "ACERTÔ MIZERAVIIIII 🥳🎉" + "</h2>")
-    break
-  }
-  else if(chute < numeroSecreto){
-    alert('O número é maior!')
-    prompt(`Tente de novo! Você só tem ${chances-1} chances!`)
-  }
-  else if(chute > numeroSecreto){
-    alert('O número é menor!')
-    prompt(`Tente de novo! Você só tem ${chances-1} chances!`)
-  }
-  chances--
+while (chances > 0) {
+    var chute = parseInt(prompt(`Insira um número entre ${min} e ${max}. 
+  Lembrando que seu saldo de chances é de:  ${chances}`))
+
+    if (chute < min || chute > max) {
+        alert('Número inválido')
+        document.write("<h2>" + "Por favor, recarregue a página e insira um valor válido" + "</h2>")
+        break
+    }
+
+    else if (chute >= min || chute <= max) {
+        if (chute === numeroSecreto) {
+            document.write("<h2>" + "ACERTÔ MIZERAVIIIII 🥳🎉" + "</h2>")
+            break
+        }
+        else if (chute < numeroSecreto) {
+            alert('O número é maior!')
+            chances--
+        }
+        else if (chute > numeroSecreto) {
+            alert('O número é menor!')
+            prompt(`Tente de novo! Você só tem ${chances - 1} chances!`)
+            chances--
+        }
+    }
 }
 
-if(chute != numeroSecreto){
-  document.write("<h2>" + "Você perdeu! O número correto era o " + numeroSecreto.toFixed(0) + " 😹" + "</h2>")
+if ((chute != numeroSecreto) && !(chute < min || chute > max)) {
+    document.write("<h2>" + "Você perdeu! O número correto era o " + numeroSecreto.toFixed(0) + " 😹" + "</h2>")
 }
-
