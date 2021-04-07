@@ -1,10 +1,10 @@
 alert('Vamos começar!!!')
 alert('Você terá somente 3 chances!')
 
-var min = 0
+var min = 1
 var max = 20
 var chances = 3
-var numeroSecreto = 16;
+var numeroSecreto = Math.floor(Math.random() * 20 + 1);
 
 while (chances > 0) {
     var chute = parseInt(prompt(`Insira um número entre ${min} e ${max}. 
