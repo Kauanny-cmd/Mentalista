@@ -4,7 +4,8 @@
 
 ## Da Imersão.Dev para o GitHub e é isso 🙂
 
-A Pen created on CodePen.io. Original URL: [https://codepen.io/kauanny-cmd/pen/dyNMdXK](https://codepen.io/kauanny-cmd/pen/dyNMdXK).
+### O mentalista é um simples jogo onde o objetivo é você encontrar o número correto **MAS ANTENÇÃO**, o número é escolhido pela a máquina 🤖✔
+### Enfim, divirta-se! 🐱‍👓
 
 <hr> 
 
