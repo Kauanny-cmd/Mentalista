@@ -5,9 +5,10 @@ var min = 1
 var max = 20
 var chances = 3
 var numeroSecreto = Math.floor(Math.random() * 20 + 1);
+var chute;
 
 while (chances > 0) {
-    var chute = parseInt(prompt(`Insira um número entre ${min} e ${max}. 
+    chute = parseInt(prompt(`Insira um número entre ${min} e ${max}. 
   Lembrando que seu saldo de chances é de:  ${chances}`))
 
     if (chute < min || chute > max) {
